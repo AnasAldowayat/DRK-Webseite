@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spenden für das Deutsche Rote Kreuz</title>
+    <link rel="stylesheet" href="styles-Spende.css">
+</head>
+<body>
+    <nav>
+        <h1 id="drk"> <a href="Home.html">DRK</a></h1>
+      
+    </nav>
+
+  
+
+    <div class="container">
+        <h1>Spenden für das Deutsche Rote Kreuz</h1>
+        <p>Ihre Unterstützung ermöglicht es uns, in Krisenzeiten schnell und effektiv zu helfen.</p>
+        <form class="donation-form" action="IHR_SPENDENVERARBEITUNGS-SKRIPT" method="post">
+            <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+            <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+            <input type="number" id="amount" name="amount" placeholder="Spendenbetrag (€)" min="1" required>
+    
+            <h2>Ihre Bankverbindung</h2>
+            <p>Bitte geben Sie Ihre Bankverbindung für die Spendenquittung an:</p>
+            <input type="text" id="accountOwner" name="accountOwner" placeholder="Kontoinhaber" required>
+            <input type="text" id="iban" name="iban" placeholder="IBAN" required>
+            <input type="text" id="bic" name="bic" placeholder="BIC" required>
+    
+            <button id="spendenButton" type="button">Jetzt spenden</button>
+            <div id="dankesNachricht" style="display: none;">Danke für deine Spende!</div>
+                    </form>
+    </div>
+
+
+    <script src="spende.js"></script>
+</body>
+
+
+<div class="footer">
+    <p>© 2024 Deutsches Rotes Kreuz</p>
+</div>
+
+
+
+</html>
